@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body:root {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgb(243 244 246);
+}
+body{
+  background-color: rgb(243 244 246);
+
+}
+#arka {
+  overflow: scroll;
+  height: 450px
+}
+
+#tepe {
+  text-align-last: center;
+
+}
+
+iframe {
+  margin-top: 15px;
+  margin-inline: auto;
+
+}
+
+#tepe {
+  height: 30vh;
+  width: 50vh;
+  background-color: ghostwhite;
+  border: 2px;
+  border-radius: 4px;
+  background: transparent;
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+
+}
+
+.videoApp {
+  width: 70vh;
+}
+
+#yapı {
+  height: 600px;
+  width: 500px;
+  background-color: ghostwhite;
+  border: 2px;
+  border-radius: 4px;
+  background: transparent;
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+
+
+}
+
+#headPlan {
+  background-color: ghostwhite;
+  border: 2px;
+  border-radius: 4px;
+  background: transparent;
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  width: 50vh;
+  border-radius: 0.3rem;
+}
+
+#roomScreen {
+  background-color: ghostwhite;
+  border: 2px;
+  border-radius: 4px;
+  background: transparent;
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  width: 50vh;
+  border-radius: 0.3rem;
+  margin-inline: auto;
+  margin-top: 8vh;
+  height: 30vh;
+  width: 60vh;
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.betweenFooter{
+  width: 45%;
+}
+#footer{
+  
+}
+#nav {
+  margin-right: 2px;
+  margin-left: 10px;
+  height: 15vh;
+}
+
+#logo {
+  height: 100px;
+  float: left;
+  margin-right: 20vh;
+}
+
+#Footerlogo {
+  height: 100px;
+  float: left;
+  margin-right: 3vh;
+}
+
+#Clickroom {
+  background-color: aqua;
+  width: 30%;
+  height: 5%;
+  border: 2;
+  border-color: black;
+  border-radius: 8px;
+}
+
+#head {
+  margin-left: 20vh;
+}
+
+#Profile {
+  margin-left: 20vh;
+}
+
+#clickButton {
+  width: 20vh;
+  height: 30px;
+  border: 2;
+  border-color: black;
+  border-radius: 8px;
+  transform: translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+}
+
+#clickButton:hover {
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#deger {
+  border: 5px solid gray;
+  margin-inline: auto;
+  margin-top: 15px;
+  height: 600px;
+  width: 500px;
+  border: 5px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@keyframes example {
+  0% {
+    transform: translateX(7.1rem);
+    opacity: 0.2
+  }
+
+  100% {
+    transform: translateX(0);
+    ;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-7.1rem);
+    opacity: 0.2
+  }
+
+  100% {
+    transform: translateX(0);
+    ;
+    opacity: 1;
+  }
+}
+
+#TitleofHomepage {
+  position: relative;
+  animation-name: fromLeft;
+  animation-duration: 5s;
+}
+
+#VideoSet {
+  width: 50vh;
+  height: 30vh;
+}
+
+#videoback {
+  background-color: aliceblue;
+  text-align: -webkit-center;
+}
+
+#videoiframe {
+  margin-bottom: 10vh;
+}
+
+#Block {
+  display: block;
+  width: 60vh;
+}
+
+#arkaplan {
+  background-color: yellow;
+  width: 90%;
+  height: 20rem;
+}
+
+#sa {
+  display: none;
+}
+
+#taban {}
+
+#imgs {
+  width: 55%;
+  margin: 3%
+}
+
+#profile {
+  width: 40px;
+  border-radius: 50%;
+}
+
+@layer base {
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.7% 82.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #arkaplan {
+    background-color: aqua;
+    width: 90%;
+    height: 30rem;
+  }
+
+  #sa {
+    display: block;
+  }
+
+  #head {
+    display: none;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
